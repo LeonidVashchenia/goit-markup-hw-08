@@ -1,0 +1,64 @@
+/* ?----Custom Properties---- */
+:root {
+  --brand-primary-color: #2196f3;
+  --brand-second-color: #212121;
+  --brand-logo-second-color: #000000;
+  --text-primary-color: #757575;
+  --bkc-primary-color: #ffffff;
+  --bkc-second-color: #2f303a;
+  --bkc-third-color: #f5f4fa;
+  --bkc-hero-color: rgba(47, 48, 58, 0.4);
+  --hover-color: #2196f3;
+  --btn-hover: #188ce8;
+  --border-color: #ececec;
+  --icon-primary-color: #afb1b8;
+}
+
+/*? ----General settings -------*/
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text-primary-color);
+  background-color: var(--bkc-primary-color);
+}
+
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding-left: 0;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-second-color);
+  margin-bottom: 50px;
+}

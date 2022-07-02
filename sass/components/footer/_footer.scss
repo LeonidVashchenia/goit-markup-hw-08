@@ -1,0 +1,28 @@
+.footer {
+  background-color: var(--bkc-second-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  &__list {
+    display: flex;
+    align-items: baseline;
+  }
+  &__logo {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--bkc-primary-color);
+    margin-bottom: 20px;
+  }
+  &__address {
+    width: 231px;
+    margin-right: 70px;
+  }
+  &__social-networks {
+    margin-right: auto;
+  }
+}
