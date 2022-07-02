@@ -58,17 +58,10 @@ img {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   color: var(--brand-second-color);
   margin-bottom: 50px;
-}
-
-.container {
-  width: 1200px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .logo {
@@ -433,18 +426,6 @@ img {
 
 .header {
   border-bottom: 1px solid var(--border-color);
-}
-.header__logo {
-  margin-right: 93px;
-}
-.header__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 80px;
 }
 
 .nav__list {
