@@ -65,15 +65,14 @@ img {
 }
 
 .logo {
-  display: block;
+  text-decoration: none;
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.167;
   letter-spacing: 0.03em;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   color: var(--brand-primary-color);
-  text-decoration: none;
 }
 .logo--header {
   color: var(--brand-logo-second-color);
@@ -83,17 +82,14 @@ img {
 }
 
 .btn {
-  display: block;
   font-family: inherit;
   font-size: 16px;
   text-align: center;
   font-weight: 700;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  min-width: 200px;
-  min-height: 50px;
-  margin: 0 auto;
-  padding: 0;
+  width: 200px;
+  height: 50px;
   color: var(--bkc-primary-color);
   background-color: var(--brand-primary-color);
   border-radius: 4px;
@@ -104,9 +100,6 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.btn__text {
-  margin-right: 10px;
 }
 .btn:hover, .btn:focus {
   background-color: var(--btn-hover);
@@ -427,6 +420,19 @@ img {
 .header {
   border-bottom: 1px solid var(--border-color);
 }
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60px;
+  min-width: 320px;
+}
+.header__logo {
+  margin-left: 15px;
+}
 
 .nav__list {
   font-weight: 500;
@@ -511,30 +517,33 @@ img {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   background-color: var(--bkc-hero-color);
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-bg.jpg");
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-bg.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
-  max-height: 600px;
-  margin: 0 auto;
+}
+.hero__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 400px;
 }
 .hero__title {
-  max-width: 600px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--bkc-primary-color);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 30px;
 }
 
 .benefits {

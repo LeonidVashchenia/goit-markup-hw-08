@@ -1,5 +1,15 @@
 .header {
   border-bottom: 1px solid var(--border-color);
+  &__container {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    min-width: 320px;
+  }
+  &__logo {
+    margin-left: 15px;
+  }
+
   // &__logo {
   //   margin-right: 93px;
   // }
