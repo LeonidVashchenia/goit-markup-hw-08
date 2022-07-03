@@ -11,25 +11,21 @@
   // max-height: 600px;
   // margin: 0 auto;
   &__container {
+    height: 400px;
+    // padding-left: 60px;
+    // padding-right: 60px;
+    // min-width: 320px;
+
+    text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
-    height: 400px;
-    // min-width: 320px;
+    align-items: center;
   }
   &__title {
     @include font(900, 26px, 1.62, 0.06em);
     text-transform: uppercase;
     color: var(--bkc-primary-color);
-    // max-width: 600px;
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.36;
-    // text-align: center;
-    // letter-spacing: 0.06em;
-    // margin-left: auto;
-    // margin-right: auto;
-    // margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
