@@ -12,13 +12,20 @@
   //   justify-content: center;
   //   align-items: center;
   // }
-  // &__list {
-  //   display: flex;
-  //   justify-content: center;
-  //   align-items: center;
-  //   flex-wrap: wrap;
-  // }
+  &__list {
+    display: flex;
+    // justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+  }
   &__item {
+    flex-basis: 50%;
+    @media screen and (min-width: 768px) {
+      flex-basis: 33.333%;
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: 16.66%;
+    }
     // width: 170px;
     // height: 92px;
     // min-width: 210px;
