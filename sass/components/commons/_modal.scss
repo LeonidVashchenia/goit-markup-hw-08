@@ -5,6 +5,9 @@
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 350ms, visibility 400ms;
+
+  padding: 20px 50px;
+  overflow-y: scroll;
 }
 .is-hidden {
   visibility: hidden;
@@ -13,6 +16,14 @@
 }
 
 .modal {
+  // @media screen and (max-width: 1199px) {
+  //   position: absolute;
+  //   top: 50%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+  //   max-width: 700px;
+  //   width: 100%;
+  // }
   width: 528px;
   height: 581px;
   padding: 40px;

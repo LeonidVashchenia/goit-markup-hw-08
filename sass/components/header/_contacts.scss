@@ -1,7 +1,7 @@
 .contacts {
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
   @include font(500, 14px, 1.14, 0.02em);
   display: flex;
   align-items: center;
