@@ -1,24 +1,18 @@
 .header {
   border-bottom: 1px solid var(--border-color);
-  display: block;
-  height: 60px;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  // &__container {
-  //   display: flex;
-  //   align-items: center;
-  //   height: 60px;
-  // }
-  // &__logo {
-  //   margin-left: 15px;
-  // }
-
-  // &__logo {
-  //   margin-right: 93px;
-  // }
-  // &__container {
-  //   display: flex;
-  //   align-items: center;
-  //   height: 80px;
-  // }
+  &__container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+  &__logo {
+    margin-right: 93px;
+  }
+  @media screen and (max-width: 1199px) {
+    &__container {
+      justify-content: space-between;
+      height: 60px;
+    }
+  }
 }
