@@ -3,35 +3,25 @@
     display: none;
   }
   display: inline-flex;
+  z-index: 99;
   padding: 0;
   margin: 0;
   border: none;
+  cursor: pointer;
   background-color: transparent;
   &__close {
     display: none;
   }
-}
-.btn-menu.is-open .btn-menu__close {
-  display: block;
-}
-.btn-menu.is-open .btn-menu__menu {
-  display: none;
-}
-
-.manu-container {
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    &.is-open {
-      display: block;
-    }
+  &.is-open &__close {
+    display: block;
   }
-  // @media screen and (min-width: 768px) {
-  //   display: flex;
-  // flex-grow: 1;
-  // justify-content: space-between;
-  // }
+  &.is-open &__menu {
+    display: none;
+  }
+  &:focus &__menu,
+  &:hover &__menu,
+  &:focus &__close,
+  &:hover &__close {
+    fill: var(--btn-hover);
+  }
 }

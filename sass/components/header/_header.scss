@@ -4,15 +4,35 @@
     position: relative;
     display: flex;
     align-items: center;
-    height: 80px;
-  }
-  &__logo {
-    margin-right: 93px;
-  }
-  @media screen and (max-width: 1199px) {
-    &__container {
-      justify-content: space-between;
-      height: 60px;
+    justify-content: space-between;
+    height: 60px;
+    @media screen and (min-width: 768px) {
+      height: 80px;
     }
+  }
+}
+
+.manu-container {
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bkc-primary-color);
+    padding: 48px 40px;
+    &.is-open {
+      // display: block;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
   }
 }
