@@ -6,6 +6,10 @@
     @media screen and (min-width: 768px) {
       @include font(500, 14px, 1.14, 0.02em);
       flex-direction: row;
+      margin-left: 88px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
     }
   }
   &__item:not(:last-child) {
@@ -19,7 +23,7 @@
 }
 
 .nav__link {
-  outline: 1px solid red;
+  // outline: 1px solid red;
   text-decoration: none;
   color: var(--brand-second-color);
   position: relative;

@@ -5,9 +5,10 @@
     flex-direction: column-reverse;
     margin-bottom: 64px;
   }
-  @include font(500, 34px, 1.17, 0.02em);
+  @include font(500, 14px, 1.14, 0.02em);
+  // @include font(500, 34px, 1.17, 0.02em);
   @media screen and (min-width: 768px) {
-    @include font(500, 14px, 1.14, 0.02em);
+    // @include font(500, 14px, 1.14, 0.02em);
     display: flex;
     flex-direction: column;
   }
@@ -48,5 +49,15 @@
   &:hover,
   &:focus {
     color: var(--hover-color);
+  }
+  @media screen and (max-width: 767px) {
+    &--mob-menu {
+      @include font(500, 34px, 1.17, 0.02em);
+      color: var(--hover-color);
+    }
+    &--email-menu {
+      @include font(500, 24px, 1.16, 0.02em);
+      // color: var(--hover-color);
+    }
   }
 }
