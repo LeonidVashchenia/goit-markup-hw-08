@@ -15,8 +15,9 @@
 .manu-container {
   @media screen and (max-width: 767px) {
     display: none;
-    position: absolute;
-    z-index: 50;
+    position: fixed;
+    z-index: 2;
+    // overflow-y: scroll;
     top: 0;
     left: 0;
     width: 100vw;

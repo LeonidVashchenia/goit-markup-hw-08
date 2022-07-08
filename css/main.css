@@ -108,7 +108,7 @@ img {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  z-index: 99;
+  z-index: 3;
   padding: 0;
   margin: 0;
   border: none;
@@ -201,6 +201,7 @@ img {
 
 .backdrop {
   position: fixed;
+  z-index: 4;
   top: 0;
   width: 100vw;
   height: 100vh;
@@ -529,8 +530,8 @@ img {
 @media screen and (max-width: 767px) {
   .manu-container {
     display: none;
-    position: absolute;
-    z-index: 50;
+    position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100vw;
@@ -873,6 +874,11 @@ img {
   text-transform: uppercase;
   color: var(--brand-second-color);
   margin-bottom: 10px;
+}
+@media screen and (min-width: 768px) {
+  .benefits__subtitle {
+    text-align: start;
+  }
 }
 .benefits__text {
   font-weight: 400;
