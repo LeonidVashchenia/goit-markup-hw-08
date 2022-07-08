@@ -37,10 +37,11 @@
     }
   }
   &__title {
+    max-width: 360px;
+    margin: 0 auto 30px;
     @include font(900, 26px, 1.62, 0.06em);
     text-transform: uppercase;
     color: var(--bkc-primary-color);
-    margin-bottom: 30px;
     @media screen and (min-width: 1200px) {
       @include font(900, 44px, 1.36, 0.06em);
     }
