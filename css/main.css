@@ -832,6 +832,7 @@ img {
     font-size: 44px;
     line-height: 1.36;
     letter-spacing: 0.06em;
+    max-width: 696px;
   }
 }
 

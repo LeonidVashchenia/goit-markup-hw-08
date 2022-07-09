@@ -44,6 +44,7 @@
     color: var(--bkc-primary-color);
     @media screen and (min-width: 1200px) {
       @include font(900, 44px, 1.36, 0.06em);
+      max-width: 696px;
     }
   }
 }
